@@ -18248,7 +18248,7 @@ rm -f UnicodePlugin.sub UnicodePlugin.lib
 { $as_echo "$as_me:${as_lineno-$LINENO}: checking for PangoCairo libraries" >&5
 $as_echo_n "checking for PangoCairo libraries... " >&6; }
 save_CPPFLAGS="$CPPFLAGS"
-CPPFLAGS="-I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/lib/arm-linux-gnueabihf/glib-2.0/include -I/usr/lib/i386-linux-gnu/glib-2.0/include"
+CPPFLAGS="$save_CPPFLAGS -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/lib/arm-linux-gnueabihf/glib-2.0/include -I/usr/lib/i386-linux-gnu/glib-2.0/include"
 cat confdefs.h - <<_ACEOF >conftest.$ac_ext
 /* end confdefs.h.  */
 #include <pango/pangocairo.h>
